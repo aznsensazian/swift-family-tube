@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.familytube.app</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>Google OAuth Callback</string>
+		</dict>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Family Tube needs access to your photo library to upload family videos.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Family Tube needs camera access to record family videos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Family Tube needs microphone access to record audio with your videos.</string>
+</dict>
+</plist>
