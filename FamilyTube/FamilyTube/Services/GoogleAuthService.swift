@@ -1,10 +1,18 @@
 import Foundation
 import AuthenticationServices
+import UIKit
 
 /// Manages Google OAuth2 authentication using ASWebAuthenticationSession.
 /// This avoids the need for the full Google Sign-In SDK by handling OAuth2 directly.
 @MainActor
-class GoogleAuthService: ObservableObject {
+class GoogleAuthService: NSObject, ObservableObject, ASWebAuthenticationPresentationContextProviding {
+
+    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap { $0.windows }
+            .first { $0.isKeyWindow } ?? ASPresentationAnchor()
+    }
     @Published var accessToken: String?
     @Published var refreshToken: String?
     @Published var userEmail: String?
@@ -17,12 +25,15 @@ class GoogleAuthService: ObservableObject {
     private let tokenURL = "https://oauth2.googleapis.com/token"
     private let userInfoURL = "https://www.googleapis.com/oauth2/v2/userinfo"
 
+    private var authSession: ASWebAuthenticationSession?
+
     private let tokenKey = "ft_access_token"
     private let refreshTokenKey = "ft_refresh_token"
     private let userEmailKey = "ft_user_email"
     private let userNameKey = "ft_user_name"
 
-    init() {
+    override init() {
+        super.init()
         loadSavedTokens()
     }
 
@@ -60,9 +71,12 @@ class GoogleAuthService: ObservableObject {
                     continuation.resume(throwing: AuthError.noCallback)
                 }
             }
+            session.presentationContextProvider = self
             session.prefersEphemeralWebBrowserSession = false
+            self.authSession = session
             session.start()
         }
+        authSession = nil
 
         guard let code = URLComponents(url: callbackURL, resolvingAgainstBaseURL: false)?
             .queryItems?.first(where: { $0.name == "code" })?.value else {

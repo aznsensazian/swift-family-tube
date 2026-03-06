@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10000001 /* FamilyTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000001; };
-		A10000002 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000002; };
-		A10000003 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000003; };
-		A10000004 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000004; };
-		A10000005 /* ShareInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000005; };
-		A10000006 /* VideoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000006; };
-		A10000007 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000007; };
-		A10000008 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000008; };
-		A10000009 /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000009; };
-		A10000010 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010; };
-		A10000011 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000011; };
-		A10000012 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012; };
-		A10000013 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000013; };
-		A10000014 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000014; };
-		A10000015 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000015; };
-		A10000016 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000016; };
-		A10000017 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000017; };
-		A10000018 /* ShareVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000018; };
-		A10000019 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000019; };
-		A10000020 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020; };
-		A10000021 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000021; };
-		A10000022 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022; };
-		A10000023 /* FamilyManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000023; };
-		A10000024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000024; };
+		A10000001 /* FamilyTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000001 /* FamilyTubeApp.swift */; };
+		A10000002 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000002 /* AppConstants.swift */; };
+		A10000003 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000003 /* Video.swift */; };
+		A10000004 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000004 /* User.swift */; };
+		A10000005 /* ShareInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000005 /* ShareInvite.swift */; };
+		A10000006 /* VideoMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000006 /* VideoMetadata.swift */; };
+		A10000007 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000007 /* GoogleAuthService.swift */; };
+		A10000008 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000008 /* GoogleDriveService.swift */; };
+		A10000009 /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000009 /* ThumbnailGenerator.swift */; };
+		A10000010 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010 /* AuthViewModel.swift */; };
+		A10000011 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000011 /* VideoViewModel.swift */; };
+		A10000012 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012 /* SignInView.swift */; };
+		A10000013 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000013 /* MainTabView.swift */; };
+		A10000014 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000014 /* HomeView.swift */; };
+		A10000015 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000015 /* VideoCardView.swift */; };
+		A10000016 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000016 /* VideoPlayerView.swift */; };
+		A10000017 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000017 /* UploadView.swift */; };
+		A10000018 /* ShareVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000018 /* ShareVideoView.swift */; };
+		A10000019 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000019 /* SearchView.swift */; };
+		A10000020 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020 /* ExploreView.swift */; };
+		A10000021 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000021 /* NotificationsView.swift */; };
+		A10000022 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022 /* ProfileView.swift */; };
+		A10000023 /* FamilyManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000023 /* FamilyManagerView.swift */; };
+		A10000024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000024 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,7 +253,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					A60000001 = {
 						CreatedOnToolsVersion = 15.0;
@@ -358,6 +358,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3ZP647Y8P9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -381,6 +382,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -421,6 +423,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3ZP647Y8P9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -437,6 +440,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -449,7 +453,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FamilyTube/Info.plist;
@@ -482,7 +485,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FamilyTube/Info.plist;
@@ -530,7 +532,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = A90000001 /* Project object */;
 }

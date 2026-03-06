@@ -1,5 +1,6 @@
 import SwiftUI
 import AVKit
+import AVFoundation
 
 struct VideoPlayerView: View {
     let video: Video
@@ -166,9 +167,13 @@ struct VideoPlayerView: View {
     }
 
     private func setupPlayer() {
+        try? AVAudioSession.sharedInstance().setCategory(.playback)
+        try? AVAudioSession.sharedInstance().setActive(true)
+
         let driveService = GoogleDriveService(authService: authViewModel.authService)
-        if let url = driveService.getVideoStreamURL(fileID: video.driveFileID) {
-            player = AVPlayer(url: url)
+        if let asset = driveService.getVideoAsset(fileID: video.driveFileID) {
+            let playerItem = AVPlayerItem(asset: asset)
+            player = AVPlayer(playerItem: playerItem)
             player?.play()
         }
     }

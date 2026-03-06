@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import AVFoundation
 
 /// Service for interacting with Google Drive API to store and retrieve videos.
 @MainActor
@@ -280,11 +281,13 @@ class GoogleDriveService: ObservableObject {
         return try await authorizedRequest(url: url)
     }
 
-    /// Get a streaming URL for video playback
-    func getVideoStreamURL(fileID: String) -> URL? {
+    /// Get an AVURLAsset configured for authenticated video streaming
+    func getVideoAsset(fileID: String) -> AVURLAsset? {
         guard let accessToken = authService.accessToken else { return nil }
-        let urlString = "\(baseURL)/files/\(fileID)?alt=media&access_token=\(accessToken)"
-        return URL(string: urlString)
+        let urlString = "\(baseURL)/files/\(fileID)?alt=media"
+        guard let url = URL(string: urlString) else { return nil }
+        let headers = ["Authorization": "Bearer \(accessToken)"]
+        return AVURLAsset(url: url, options: ["AVURLAssetHTTPHeaderFieldsKey": headers])
     }
 
     /// Share a file with a specific email address (Google Drive sharing)

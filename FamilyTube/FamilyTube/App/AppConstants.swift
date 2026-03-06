@@ -6,8 +6,8 @@ enum AppConstants {
     // MARK: - Google API Configuration
     // Replace these with your actual Google Cloud Console credentials
     enum Google {
-        static let clientID = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
-        static let apiKey = "YOUR_GOOGLE_API_KEY"
+        static let clientID = "933979668006-imna0foiqmp6om4bgoqcj57bt3goaf2b.apps.googleusercontent.com"
+        static let apiKey = "AIzaSyAlKMm6ZaFEBPRnvB1Ysm_F0_9-jmUy2ig"
         static let driveScope = "https://www.googleapis.com/auth/drive.file"
         static let driveReadScope = "https://www.googleapis.com/auth/drive.readonly"
         static let emailScope = "https://www.googleapis.com/auth/userinfo.email"
